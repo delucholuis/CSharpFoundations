@@ -7,11 +7,10 @@ namespace CSharpFoundations
     {
         static void Main(string[] args)
         {
-            string[] names = new string[]{"Sansa", "Bran", "Eddard", "Arya"};
-
-          foreach (string item in names){
-            Console.WriteLine(item);
-          }
+           System.DateTime gameOfThronesPremier =
+            System.Convert.ToDateTime("April 17 2011 10:30 PM");
+        System.Console.WriteLine(
+            gameOfThronesPremier);
         }
     }
 }
