@@ -6,12 +6,27 @@ namespace CSharpFoundations
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Type Name Below");
-            string name = Console.ReadLine();
-            Console.WriteLine($"Hello {name}!");{
-                Console.WriteLine("Push ENTER to End Program");
-                Console.ReadLine();
+            decimal? bonus = null;
+            if (bonus.HasValue)
+            {
+                decimal b = bonus.Value;
+                System.Console.WriteLine("bonus: " + b);
+            }
+            else
+            {
+                System.Console.WriteLine("bonus: null");
+            }
+            bonus = 1000.00m;
+            if (bonus.HasValue)
+            {
+                decimal b = bonus.Value;
+                System.Console.WriteLine("bonus: " + b);
+            }
+            else
+            {
+                System.Console.WriteLine("bonus: null");
+            }
             }
         }
     }
-}
+
