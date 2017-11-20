@@ -1,16 +1,21 @@
 ﻿using System;
-using System.Text;
 
 namespace CSharpFoundations
 {
-    class Program
+    public class Parser
     {
-        static void Main(string[] args)
+        public static int? ParseInt(string StringToParse)
         {
-           System.DateTime gameOfThronesPremier =
-            System.Convert.ToDateTime("April 17 2011 10:30 PM");
-        System.Console.WriteLine(
-            gameOfThronesPremier);
+           int inte;
+           if (int.TryParse(stringToParse, out inte)){return inte;}
+           else {return null;}
         }
+    }
+}
+class Program
+{
+    static void Main(string[] arg){
+        Console.WriteLine(Parser.ParseInt("GOT"));
+        
     }
 }
