@@ -4,7 +4,7 @@ namespace CSharpFoundations
 {
     public class Parser
     {
-        public static int? ParseInt(string StringToParse)
+        public static int? ParseInt(string stringToParse)
         {
            int inte;
            if (int.TryParse(stringToParse, out inte)){return inte;}
@@ -12,7 +12,7 @@ namespace CSharpFoundations
         }
     }
 }
-class Program
+class Program 
 {
     static void Main(string[] arg){
         Console.WriteLine(Parser.ParseInt("GOT"));
